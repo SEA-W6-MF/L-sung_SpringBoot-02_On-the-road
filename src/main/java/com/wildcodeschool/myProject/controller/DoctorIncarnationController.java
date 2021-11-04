@@ -36,7 +36,7 @@ public class DoctorIncarnationController {
                 return doc13;
             default:
                 // exception 404
-                throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Impossible to retrieve the incarnation");
+                throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Impossible to retrieve the incarnation " + number);
         }
     }
 }
